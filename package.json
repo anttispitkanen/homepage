@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "homepage": "https://github.com/anttispitkanen/homepage",
+  "homepage": "https://anttispitkanen.github.io/homepage",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
