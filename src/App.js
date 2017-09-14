@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import MarkdownParser from './MarkdownParser';
+import Lander from './components/Lander';
 
 const App = () => (
     <div className="App">
-        Fetchattu markdown:<br />
+        <Lander />
 
         <MarkdownParser
             url="testi.md"
