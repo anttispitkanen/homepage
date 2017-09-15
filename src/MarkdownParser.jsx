@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import marked from 'marked';
 import PropTypes from 'prop-types';
-import { BASE_URL } from './constants';
+import { API_URL, apiOptions } from './constants';
 
 class MarkdownParser extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class MarkdownParser extends Component {
 
     async componentDidMount() {
         try {
-            const response = await fetch(BASE_URL + this.props.url);
+            const response = await fetch(API_URL + this.props.url, apiOptions);
             const text = await response.text();
             this.setState({ fetchedMarkdown: text });
         } catch (e) {
@@ -30,11 +30,11 @@ class MarkdownParser extends Component {
 
     render() {
         if (this.state.error) {
-            return <div>Oops, see console for what went wrong!</div>;
+            return <div className={this.props.classNameProp}>Oops, see console for what went wrong!</div>;
         }
 
         if (!this.state.fetchedMarkdown) {
-            return <div>Fetching content...</div>;
+            return <div className={this.props.classNameProp}>Fetching content...</div>;
         }
 
         return (
