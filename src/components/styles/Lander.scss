@@ -1,14 +1,15 @@
 .lander {
     height: 100vh;
-    background-image: url('https://instagram.fqlf1-1.fna.fbcdn.net/t51.2885-15/e35/19436313_1548813541815912_8264459887249981440_n.jpg');
+    background-image: url('https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/kallio.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
 
     h1 {
         position: absolute;
-        top: 50vh;
+        top: 45vh;
         font-size: 2.5rem;
         font-weight: bold;
         color: white;
@@ -17,7 +18,7 @@
 
     h2 {
         position: absolute;
-        top: 70vh;
+        top: 77vh;
         font-size: 1.6rem;
         font-weight: 300;
         color: white;
