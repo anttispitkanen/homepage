@@ -1,0 +1,25 @@
+/* Styles for Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #EEE;
+
+    .some-icons {
+        padding: 20px;
+        i {
+            font-size: 2rem;
+            padding: 5px;
+        }
+    }
+
+    .copyright {
+        padding: 25px;
+    }
+}
