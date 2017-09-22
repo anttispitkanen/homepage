@@ -1,28 +1,35 @@
 .lander {
     height: 100vh;
     width: 100%;
-    background-image: url('https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/kallio.jpg');
-    background-size: cover;
-    background-position: left;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
+    background-image: url('https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/kallio.jpg');
+    background-position: left;
+    background-size: cover;
 
-    h1 {
-        position: absolute;
-        top: 45vh;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: white;
-        text-shadow: 0 0 10px black;
-    }
+    .title {
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    h2 {
-        position: absolute;
-        top: 77vh;
-        font-size: 1.6rem;
-        font-weight: 300;
-        color: white;
-        text-shadow: 0 0 10px black;
+        h1 {
+            top: 45vh;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            top: 77vh;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+
+        h1, h2 {
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 10px black;
+        }
     }
 }
