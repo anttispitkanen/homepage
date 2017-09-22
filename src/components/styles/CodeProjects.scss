@@ -1,6 +1,6 @@
 /* Styles for CodeProjects */
 .CodeProjects {
-    padding: 30px 10px 40px;
+    padding: 50px 10px 40px;
     background-color: #282c34;
     width: 100%;
     color: #abb2bf;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .projects-intro, .projects {
         display: flex;
@@ -63,5 +64,15 @@
             text-decoration: none;
             margin-left: 10px;
         }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border: 30px solid transparent;
+        border-top-color: #282c34;
+        bottom: -60px;
     }
 }
