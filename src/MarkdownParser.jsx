@@ -41,6 +41,7 @@ class MarkdownParser extends Component {
             <div
                 dangerouslySetInnerHTML={this.parseMarkdown()}
                 className={this.props.classNameProp}
+                style={this.props.style}
             />
         );
     }
