@@ -5,6 +5,7 @@ import Lander from './components/Lander';
 import Who from './components/Who';
 import CodeProjects from './components/CodeProjects';
 import Community from './components/Community';
+import Music from './components/Music';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
         <Who />
         <CodeProjects />
         <Community />
+        <Music />
         <Footer />
     </div>
 );
