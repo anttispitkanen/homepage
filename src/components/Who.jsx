@@ -5,6 +5,11 @@ import './styles/Who.css';
 
 const Who = () => (
     <div className="Who">
+        <MarkdownParser
+            classNameProp="some-icons"
+            url="some-icons.md"
+        />
+
         <div className="who-row card">
             <img src="https://instagram.fqlf1-1.fna.fbcdn.net/t51.2885-15/e35/18579584_1423304657728138_16347818054647808_n.jpg" alt="Antti Pitkänen" />
 
