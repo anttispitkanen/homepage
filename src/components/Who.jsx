@@ -11,7 +11,10 @@ const Who = () => (
         />
 
         <div className="who-row card">
-            <img src="https://instagram.fqlf1-1.fna.fbcdn.net/t51.2885-15/e35/18579584_1423304657728138_16347818054647808_n.jpg" alt="Antti Pitkänen" />
+            <img
+                src="https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/profile-poetkoe.jpg"
+                alt="Antti Pitkänen"
+            />
 
             <MarkdownParser
                 url="whoami.md"
