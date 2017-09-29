@@ -7,7 +7,7 @@
 /coverage
 
 # production
-# /build
+/build
 
 # built CSS and source maps
 src/**/*.css
