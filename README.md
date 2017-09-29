@@ -28,7 +28,7 @@ class MarkdownParser extends Component {
 
     async componentDidMount() {
         try {
-            const response = await fetch(API_URL + this.props.url, apiOptions);
+            const response = await fetch(CMS_URL + this.props.url);
             const text = await response.text();
             this.setState({ fetchedMarkdown: text });
         } catch (e) {

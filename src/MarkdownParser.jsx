@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import marked from 'marked';
 import PropTypes from 'prop-types';
-import { API_URL, apiOptions } from './constants';
+const CMS_URL = 'https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/';
 
 class MarkdownParser extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class MarkdownParser extends Component {
 
     async componentDidMount() {
         try {
-            const response = await fetch(API_URL + this.props.url, apiOptions);
+            const response = await fetch(CMS_URL + this.props.url);
             const text = await response.text();
             this.setState({ fetchedMarkdown: text });
         } catch (e) {
