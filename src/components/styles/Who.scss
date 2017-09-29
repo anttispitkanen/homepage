@@ -37,6 +37,10 @@
         h2, p {
             text-align: center;
         }
+
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
     }
 
     h2 {
@@ -65,12 +69,20 @@
         ul {
             list-style-type: none;
             padding-left: 20px;
+
+            li {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
         }
     }
 
     .contact {
         ul {
             list-style-type: none;
+
+            li {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
         }
     }
 
