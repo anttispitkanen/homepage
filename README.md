@@ -63,7 +63,7 @@ class MarkdownParser extends Component {
 
 So basically a `<MarkdownParser/>` is just dropped to anywhere some text (or e.g. a Youtube embed) is wanted, and given a `url` as prop, which in this case is just the file name, since all the files live in the same directory.
 
-I use the GitHub API to access the repo contents, but you could just as well "go raw". You can access the raw content of any available file by changing
+You can access the raw content of any available file by changing
 ```
 github.com/<username>/<repo>/blob/<branch>/path/to/file.extension
 ```
