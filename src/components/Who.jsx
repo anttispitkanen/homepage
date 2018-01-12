@@ -22,6 +22,13 @@ const Who = () => (
             />
         </div>
 
+        <div className="mission-statement">
+            <MarkdownParser
+                url="mission.md"
+                classNameProp=""
+            />
+        </div>
+
         <div className="who-row">
             <MarkdownParser
                 url="skills.md"
