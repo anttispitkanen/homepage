@@ -3,8 +3,12 @@ import React from 'react';
 import MarkdownParser from '../MarkdownParser';
 import './styles/Lander.css';
 
+import Carousel from './Carousel';
+
 const Lander = () => (
     <div className="lander">
+        <Carousel />
+
         <MarkdownParser
             url="title.md"
             classNameProp="title"
