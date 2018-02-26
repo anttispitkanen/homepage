@@ -7,11 +7,11 @@ $text-shadow-color: #333;
 
     .carousel {
         height: 100%;
-        width: 200vw;
+        width: 300vw;
         background-color: #111;
 
         &.animated {
-            animation: carousel 18s linear infinite;
+            animation: carousel 30s linear infinite;
         }
 
         .carousel-pic {
@@ -29,6 +29,10 @@ $text-shadow-color: #333;
             }
 
             &.pic2 {
+                background-position: right;
+            }
+
+            &.pic3 {
                 background-position: left;
             }
         }
@@ -36,9 +40,11 @@ $text-shadow-color: #333;
 
     @keyframes carousel {
         0% { transform: translateX(0vw); }
-        48% { transform: translateX(0vw); }
-        50% { transform: translateX(-100vw); }
-        98% { transform: translateX(-100vw); }
+        31% { transform: translateX(0vw); }
+        32% { transform: translateX(-100vw); }
+        65% { transform: translateX(-100vw); }
+        66% { transform: translateX(-200vw); }
+        99% { transform: translateX(-200vw); }
         100% { transform: translateX(0vw); }
     }
 

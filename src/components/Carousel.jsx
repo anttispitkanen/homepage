@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 const pic1url = 'https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/tribex-poetkoe-large.jpg';
-const pic2url = 'https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/kallio.jpg';
+const pic2url = 'https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/blue-poetkoe.png';
+const pic3url = 'https://raw.githubusercontent.com/anttispitkanen/homepage-content/master/kallio.jpg';
 
 class Carousel extends Component {
     constructor() {
@@ -9,6 +10,7 @@ class Carousel extends Component {
         this.state = {
             pic1: '',
             pic2: '',
+            pic3: '',
             error: null, // if there is an error regarding either of the image loads
             ready: false
         };
@@ -16,7 +18,11 @@ class Carousel extends Component {
 
     async componentDidMount() {
         try {
-            await Promise.all([this.fetchImg('pic1', pic1url), this.fetchImg('pic2', pic2url)]);
+            await Promise.all([
+                this.fetchImg('pic1', pic1url),
+                this.fetchImg('pic2', pic2url),
+                this.fetchImg('pic3', pic3url)
+            ]);
             this.setState({
                 ...this.state,
                 ready: true
@@ -60,6 +66,7 @@ class Carousel extends Component {
             <div className="carousel animated">
                 <div className="carousel-pic pic1 opaque" style={{ backgroundImage: `url('${this.state.pic1}')` }} />
                 <div className="carousel-pic pic2 opaque" style={{ backgroundImage: `url('${this.state.pic2}')` }} />
+                <div className="carousel-pic pic3 opaque" style={{ backgroundImage: `url('${this.state.pic3}')` }} />
             </div>
         );
     }
