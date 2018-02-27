@@ -19,7 +19,25 @@
         }
     }
 
-    .copyright {
+    .photocredit, .copyright {
         padding: 25px;
+        line-height: 1.8rem;
+
+        h5 {
+            font-family: inherit;
+            font-weight: 500;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
     }
+
+    // .photocredit {
+    //     border: 2px solid #EEE;
+    // }
+
+    // .copyright {
+    //     padding: 25px;
+    // }
 }

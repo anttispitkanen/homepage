@@ -13,6 +13,11 @@ const Footer = () => (
             classNameProp="copyright"
             url="copyright.md"
         />
+
+        <MarkdownParser
+            classNameProp="photocredit"
+            url="photocredit.md"
+        />
     </footer>
 );
 
