@@ -21,10 +21,10 @@ class Music extends React.Component {
     calculateDimensions = () => {
         // manually calculate embed dimensions to keep aspect ratio on resize
         const width = window.innerWidth - 60;
-        const height = 0.5625 * width;
+        const height = 1.267 * width;
         this.setState({
-            width: width > 560 ? 560 : width,
-            height: height > 315 ? 315 : height
+            width: width > 300 ? 300 : width,
+            height: height > 380 ? 380 : height
         });
     }
 
@@ -37,8 +37,8 @@ class Music extends React.Component {
                 />
 
                 <MarkdownParser
-                    url="youtube-embed.md"
-                    classNameProp="youtube-embed"
+                    url="spotify-embed.md"
+                    classNameProp="spotify-embed"
                     style={{
                         height: this.state.height + 'px',
                         width: this.state.width + 'px'
